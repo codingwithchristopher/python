@@ -14,15 +14,16 @@ while myGuess != rn:
         myGuess = int(input())
     except ValueError:
         print("That's not a number bruh, take another guess!")
-        myGuess = int(input())
+        continue
+        #myGuess = int(input())
     if myGuess > rn:
         print('Too high')
         guessCount +=1
-        print(guessCount)
+        #print(guessCount)
     elif myGuess < rn:
         print('Too low')
         guessCount +=1
-        print(guessCount)
+        #print(guessCount)
     if guessCount ==5:
         break
 if myGuess == rn:
